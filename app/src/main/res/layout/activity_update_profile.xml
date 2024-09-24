@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_margin="30dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:cardElevation="15dp"
+    app:cardMaxElevation="15dp"
+    app:cardCornerRadius="15dp"
+    tools:context=".views.UpdateProfileActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="10dp">
+
+        <EditText
+            android:id="@+id/profileNameEt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="100dp"
+            android:layout_marginEnd="16dp"
+            android:hint="Enter Profile Name"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/profileEmailEt"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="40dp"
+            android:hint="Enter Profile Email"
+            android:inputType="textEmailAddress"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/profileNameEt"
+            app:layout_constraintHorizontal_bias="0.09"
+            app:layout_constraintStart_toStartOf="@+id/profileNameEt"
+            app:layout_constraintTop_toBottomOf="@+id/profileNameEt"
+            app:layout_constraintTop_toOf="@id/profileNameEt" />
+
+        <EditText
+            android:id="@+id/profileDobEt"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="40dp"
+            android:hint="Enter Date of birth"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/profileEmailEt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profileEmailEt"
+            app:layout_constraintTop_toBottomOf="@+id/profileEmailEt" />
+
+        <EditText
+            android:id="@+id/profileDistrictEt"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_marginTop="40dp"
+            android:hint="Enter District name"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/profileDobEt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profileDobEt"
+            app:layout_constraintTop_toBottomOf="@+id/profileDobEt" />
+
+        <EditText
+            android:id="@+id/profileMobileEt"
+            android:layout_width="310dp"
+            android:layout_height="42dp"
+            android:layout_marginEnd="15dp"
+            android:hint="Enter Mobile number"
+            android:inputType="number"
+            android:textSize="18sp"
+            app:layout_constraintEnd_toEndOf="@+id/profileDistrictEt"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="@+id/profileDistrictEt"
+            tools:layout_editor_absoluteY="444dp" />
+
+        <Button
+            android:id="@+id/updateBtn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="80dp"
+            android:backgroundTint="@color/white"
+            android:text="Save Profile"
+
+            android:textColor="@color/black"
+            android:textSize="18sp"
+            app:cornerRadius="10dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="@+id/profileMobileEt"
+            app:layout_constraintHorizontal_bias="0.465"
+            app:layout_constraintStart_toStartOf="@+id/profileMobileEt"
+            app:strokeColor="@color/black"
+            app:strokeWidth="2dp" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.cardview.widget.CardView>
